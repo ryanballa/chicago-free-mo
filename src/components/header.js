@@ -1,15 +1,52 @@
 import React from 'react'
 import { Link } from 'gatsby'
+import styled, { css } from 'react-emotion'
+import AnchorButton from '../components/anchorButton'
+
+const StyledHeader = styled('header')({
+  '& h1': {
+    color: '#F9F9F9',
+    margin: 0,
+  },
+  '& li': {
+    display: 'inline',
+    margin: '0 30px 0 0',
+    listStyle: 'none',
+    padding: 0,
+  },
+  '& li > a': {
+    '&:hover': {
+      textDecoration: 'underline',
+    },
+    color: '#F9F9F9',
+    fontSize: '14px',
+    textDecoration: 'none',
+  },
+  '& ol': {
+    margin: 0,
+    padding: 0,
+  },
+  alignItems: 'center',
+  display: 'flex',
+  left: 0,
+  justifyContent: 'space-between',
+  padding: '10px',
+  position: 'absolute',
+  top: '20px',
+  width: '100%',
+  zIndex: 5,
+});
 
 const Header = ({ siteTitle }) => (
-  <header>
+  <StyledHeader>
     <h1>Chicago Free-Mo</h1>
     <nav>
       <ol>
         <li><a href="#">Join Us</a></li>
+        <li><AnchorButton intention="inverse" title="Learn More" /></li>
       </ol>
     </nav>
-  </header>
+  </StyledHeader>
 )
 
 export default Header

@@ -13,8 +13,11 @@ header {
     background: rgba(45, 210, 246, 90%);
 }
 
-main {
-    margin: 0 auto;
-    width: 900px;
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Lato', sans-serif;
+    font-weight: normal;
 }
-

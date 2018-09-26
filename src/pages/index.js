@@ -1,21 +1,20 @@
 import React from 'react'
-import { Link } from 'gatsby'
-import styled, { css } from 'react-emotion'
 
 import Layout from '../components/layout'
-import AnchorButton from '../components/anchorButton'
-
-const Container = styled('section')`
-  background: #333;
-`
+import HeroBanner from '../components/heroBanner'
+import Block from '../components/block'
 
 const IndexPage = () => (
   <Layout>
-    <Container>
-      <h1>Bring Your Own Layout</h1>
-      <h2>Model railroading for those with limited space and time</h2>
-      <AnchorButton location="#" title="Learn More" />
-    </Container>
+    <HeroBanner
+      actionTitle="Learn More"
+      title="Bring Your Own Layout" 
+      subtitle="Model Railroading for those with limited space and time" 
+    />
+    <Block>
+      <h1>What is Free-Mo?</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </Block>
   </Layout>
 )
 
