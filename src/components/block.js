@@ -1,16 +1,17 @@
 import React from 'react'
 import styled, { css } from 'react-emotion'
 import AnchorButton from '../components/anchorButton'
+import { colors, fonts } from '../utils/styling'
 
 const StyledSection = styled('section')({
     '& h1' : {
-        color: '#0A424E',
-        fontSize: '28px',
+        color: colors.headerContent,
+        fontSize: fonts.xl,
         fontWeight: 'lighter',
     },
     '& p': {
-      fontSize: '14px',
-      lineHeight: '1.5',
+      fontSize: fonts.s,
+      lineHeight: fonts.l,
     },
     color: '#4B4B4B',
     margin: '0 auto',
