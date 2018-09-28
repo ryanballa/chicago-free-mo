@@ -12,7 +12,8 @@ const StyledSpan = styled('span')(props => ({
   border: (props.intention !== 'inverse') && '2px solid #0A7289',
   boxSizing: 'borderBox',
   borderRadius: '4px',
-  padding: (props.intention === 'inverse'? '5px 15px' : '10px'), 
+  padding: (props.intention === 'inverse'? '5px 15px' : '10px'),
+  textShadow: (props.intention !== 'inverse') && '0px 1px 1px rgba(0, 0, 0, 0.4)' 
 }));
 
 const AnchorButton = ({ intention, location, size, title }) => (

@@ -6,6 +6,7 @@ import AnchorButton from '../components/anchorButton'
 const StyledHeader = styled('header')({
   '& h1': {
     color: '#F9F9F9',
+    fontSize: '20px',
     margin: 0,
   },
   '& li': {

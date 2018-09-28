@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Default Starter',
+    title: 'Chicago Free-Mo Group',
   },
   plugins: [
     'gatsby-plugin-react-helmet',

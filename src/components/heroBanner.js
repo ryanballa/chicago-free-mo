@@ -6,13 +6,15 @@ import driveIn from '../images/driveIn.jpg'
 
 const StyledSection = styled('section')({
     '& .colorFill': {
-        background: 'rgba(0, 0, 0, 0.3)',
+        background: 'rgba(0, 0, 0, 0.4)',
         height: '100%',
         position: 'absolute',
         width: '100%',
         zIndex: 2,
     },
     '& figure': {
+        maxHeight: '600px',
+        overflow: 'hidden',
         position: 'absolute',
         zIndex: 1,
     },
@@ -32,7 +34,7 @@ const StyledSection = styled('section')({
         position: 'relative',
         zIndex: 3,
     },
-    background: '#ccc',
+    height: '600px',
     position: 'relative',
     textAlign: 'center',
 })
